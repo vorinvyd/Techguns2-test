@@ -52,6 +52,14 @@ public class TGConfig {
 		@Config.LangKey("config.techguns.misc.explosiveChargeAdvancedMaxBlockHardness")
 		public float explosiveChargeAdvancedMaxBlockHardness = 100.0f;
 
+		@Config.Comment("Disable gun drops from mobs / NPCs")
+		@Config.LangKey("config.techguns.misc.disableGunDrops")
+		public boolean disableGunDrops = false;
+
+		@Config.Comment("Disable armour drops from mobs / NPCs")
+		@Config.LangKey("config.techguns.misc.disableArmourDrops")
+		public boolean disableArmourDrops = false;
+
 		@Config.Comment("Disable Radiation for players. (Radiation system is still WIP)")
 		@Config.LangKey("config.techguns.misc.WIP_disableRadiationSystem")
 		@Config.RequiresMcRestart
@@ -629,6 +637,18 @@ public class TGConfig {
 		@Config.RangeDouble(min = 0.0001, max = 1000.0)
 		@Config.LangKey("config.techguns.ore_drills.powermult_oil")
 		public float powermult_oil = 0.8f;
+	}
+
+	@Config.Name("Spawner Block")
+	@Config.Comment("Techguns monster spawner blocks (holes / soldier spawns) used in world structures and dungeon presets. Does not change vanilla mob spawners.")
+	@Config.LangKey("config.techguns.spawner_block")
+	public static SpawnerBlock spawnerBlock = new SpawnerBlock();
+
+	public static class SpawnerBlock {
+
+		@Config.Comment("false = default TG mode (spawns only ITGSpawnerNPC mobs from presets). true = custom mode (spawns any EntityLiving from this spawner's mobtypes NBT id; use this when editing spawner NBT to point at entities from other mods).")
+		@Config.LangKey("config.techguns.spawnerBlock.spawnerBlockUseCustomEntitySpawn")
+		public boolean spawnerBlockUseCustomEntitySpawn = false;
 	}
 
 	static {
