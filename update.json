@@ -1,10 +1,15 @@
 {
   "homepage": "https://github.com/pWn3d1337/Techguns2",
   "1.12.2": {
-    "2.0.1.2": "Beta"
+    "2.1.0.0": "https://github.com/TheSlize/Techguns2-CE/releases/tag/Techguns-2.1",
+    "2.1.1.0": "https://github.com/TheSlize/Techguns2-CE/releases/tag/Techguns-2.1.1.0",
+    "2.1.1.1": "https://github.com/TheSlize/Techguns2-CE/releases/tag/Techguns-2.1.1.1",
+    "2.1.1.2": "https://github.com/TheSlize/Techguns2-CE/releases/tag/Techguns-2.1.1.2",
+    "2.1.2.0": "https://github.com/TheSlize/Techguns2-CE/releases/tag/Techguns-2.1.2.0",
+    "2.1.3.0": "https://github.com/TheSlize/Techguns2-CE/releases/tag/Techguns-2.1.3.0"
   },
   "promos": {
-    "1.12.2-latest": "2.0.1.2",
-    "1.12.2-recommended": "2.0.1.2"
+    "1.12.2-latest": "2.1.3.0",
+    "1.12.2-recommended": "2.1.3.0"
   }
 }
